@@ -70,10 +70,10 @@ This project is licensed under the **MIT License**. See the [LICENSE](./LICENSE)
 - [Framer Motion](https://motion.dev/docs/react-quick-start)
 
 ### Guides
--[CSS Grid & the confusion of align & justify-items, align & justify content, and align & justify self](https://medium.com/@kristinethejohnson/css-grid-the-confusion-of-align-justify-items-align-justify-content-and-align-justify-e94ac687fdb)
--[CSS Flexbox Layout Guide](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+- [CSS Grid & the confusion of align & justify-items, align & justify content, and align & justify self](https://medium.com/@kristinethejohnson/css-grid-the-confusion-of-align-justify-items-align-justify-content-and-align-justify-e94ac687fdb)
+- [CSS Flexbox Layout Guide](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 
 ### Tutorials & external code
 - [YouTube video embedding tutorial](https://dev.to/bravemaster619/simplest-way-to-embed-a-youtube-video-in-your-react-app-3bk2)
 - [Border radius on YouTube IFrame embed](https://stackoverflow.com/questions/7811719/adding-border-radius-for-embedded-youtube-video)
--[Partial code for theme toggle, mixed with the theme toggle made during the course](https://github.com/chris-jantzen/react-typescript-theme-toggle/)
+- [Partial code for theme toggle, mixed with the theme toggle made during the course](https://github.com/chris-jantzen/react-typescript-theme-toggle/)
