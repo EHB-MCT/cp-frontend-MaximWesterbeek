@@ -1,1 +1,11 @@
 @use './base' as *;
+@use './themes' as *;
+@use './pages' as *;
+
+body.light-mode {
+    @include theme-styles(true);
+}
+
+body.dark-mode {
+    @include theme-styles(false);
+}
