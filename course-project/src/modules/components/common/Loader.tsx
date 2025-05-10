@@ -1,0 +1,10 @@
+import styles from '~styles/app.module.scss';
+
+export const Loader = () => {
+    return (
+        <div className={styles['loading']}>
+            <div className={styles['loading__gif']}></div>
+            <h2 className={styles['loading__h2']}>Loading...</h2>
+        </div>
+    );
+}
