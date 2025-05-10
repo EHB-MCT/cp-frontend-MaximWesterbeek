@@ -1,0 +1,149 @@
+$light-background: #EBF5EC;
+$light-text: #000;
+
+$dark-background: #000;
+$dark-text: #fff;
+
+$transition: background-color 0.3s ease;
+
+@mixin theme-styles($light: true) {
+    @if $light {
+        background-color: $light-background;
+
+        transition: $transition;
+    }
+
+    @else {
+        background-color: $dark-background;
+
+        transition: $transition;
+    }
+}
+
+@mixin theme-styles-footer($light: true) {
+    @if $light {
+        background-color: $light-background;
+        color: $light-text;
+
+        transition: $transition;
+    }
+
+    @else {
+        background-color: $dark-background;
+        color: $dark-text;
+
+        transition: $transition;
+    }
+}
+
+@mixin theme-styles-btn($light: true) {
+    @if $light {
+        background-color: #EBF5EC;
+        color: #000;
+        border: #E51131 solid 2px;
+        filter: drop-shadow(4px 4px #E51131);
+
+        &:hover {
+            filter: drop-shadow(0px 0px);
+            background-color: #E51131;
+            color: #fff;
+            border: #fff solid 2px;
+        }
+    }
+
+    @else {
+        background-color: #EBF5EC;
+        color: #000;
+        border: #000 solid 2px;
+        filter: drop-shadow(4px 4px #000);
+
+        &:hover {
+            filter: drop-shadow(0px 0px);
+            background-color: #000;
+            color: #fff;
+            border: #000 solid 2px;
+        }
+    }
+}
+
+@mixin theme-styles-searchbar($light: true) {
+    @if $light {
+        background-color: #EBF5EC;
+        color: #000;
+        border: #E51131 solid 2px;
+        box-shadow: 3px 3px #E51131 inset;
+
+        &:hover {
+            filter: drop-shadow(0px 0px);
+            background-color: #E51131;
+            color: #fff;
+            border: #fff solid 2px;
+        }
+    }
+
+    @else {
+        background-color: #EBF5EC;
+        color: #000;
+        border: #000 solid 2px;
+        box-shadow: 3px 3px #000 inset;
+
+        &:hover {
+            filter: drop-shadow(0px 0px);
+            background-color: #EBF5EC;
+            color: #fff;
+            border: #000 solid 2px;
+        }
+    }
+}
+
+@mixin theme-styles-border($light: true) {
+    @if $light {
+        border: #000 solid 3px;
+    }
+
+    @else {
+        border: #fff solid 3px;
+    }
+}
+
+.theme-toggle {
+    padding: 5px;
+    margin: 5px;
+    background: lightgray;
+
+    background-color: #EBF5EC;
+    color: #000;
+    border: #000 solid 2px;
+    border-radius: 10px;
+    filter: drop-shadow(4px 4px #000);
+}
+
+
+
+
+
+
+
+
+
+// body.light-mode {
+//     background-color: white;
+//     color: black;
+// }
+
+// body.dark-mode {
+//     background-color: #121212;
+//     color: white;
+// }
+
+
+
+// .light-mode {
+//     background-color: white;
+//     color: black;
+// }
+
+// .dark-mode {
+//     background-color: #121212;
+//     color: white;
+// }
