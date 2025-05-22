@@ -72,9 +72,9 @@
         "id": "sam-hoeterickx-de-wolf-en-de-3-biggetjes",
         "nameStudent": "Sam Hoeterickx",
         "fairytale": "De wolf en de 3 biggetjes",
-        "fairytaleLink": "",
+        "fairytaleLink": "https://ehb-mct.github.io/cp-frontend-Sam-Hoeterickx/#/fairy-tale",
         "description": "De Wolf en de Drie Biggetjes” is een klassiek sprookje dat draait om drie kleine biggen die elk een eigen huisje bouwen om zich te beschermen tegen een gevaarlijke wolf. De eerste big bouwt een huis van stro, de tweede een huis van hout, en de derde een stevig huis van bakstenen. Wanneer de grote boze wolf verschijnt, probeert hij de biggen op te eten. Hij blaast het stro- en houten huis omver zonder moeite, waardoor de eerste twee biggen moeten vluchten naar het stenen huis van hun broer. Maar hoe hard de wolf ook blaast, het stenen huis blijft stevig staan. Uiteindelijk geeft de wolf op of wordt hij op slinkse wijze verslagen (afhankelijk van de versie). Het verhaal eindigt met de overwinning van slimheid, voorbereiding en hard werken over luiheid en gemakzucht.<br><br>Voor dit studentenproject heb ik dit klassieke verhaal omgezet in een interactieve 3D-ervaring die rechtstreeks in de browser te beleven is. Met behulp van Three.js, React Three Fiber en React Three Drei kon ik de wereld van de drie biggetjes op een visueel aantrekkelijke manier tot leven brengen. Om de scènes extra dynamiek te geven, heb ik gebruikgemaakt van GSAP voor vloeiende animaties en overgangen. Het project was een leerzame uitdaging waarin ik storytelling, creatieve vormgeving en technische webontwikkeling heb gecombineerd om een meeslepende digitale vertelling te realiseren.",
-        "videoExplainer": "",
+        "videoExplainer": "Ngv0FRC6gqc",
         "imgThumbnail": "https://ehb-mct.github.io/cp-frontend-Sam-Hoeterickx/images/fairytale/tumbnail.png",
         "imgBanner": "https://ehb-mct.github.io/cp-frontend-Sam-Hoeterickx/images/fairytale/Banner_image.png",
         "imgsExtra": [
@@ -82,7 +82,7 @@
             "https://ehb-mct.github.io/cp-frontend-Sam-Hoeterickx/images/fairytale/extra_image_2.png",
             "https://ehb-mct.github.io/cp-frontend-Sam-Hoeterickx/images/fairytale/extra_image_3.png"
         ],
-        "genre": "fantasie",
+        "genre": "avontuur",
         "storyFrom": "andere sprookjes"
     },
     {
@@ -123,7 +123,7 @@
         "id": "younes-ben-ali-aladin-en-de-wonderlamp",
         "nameStudent": "Younes Ben Ali",
         "fairytale": "Aladin en de wonderlamp",
-        "fairytaleLink": "",
+        "fairytaleLink": "https://ehb-mct.github.io/cp-frontend-YounesEHB2023/Parallax",
         "description": "Step into the bustling streets of Agrabah where Aladdin's adventure shimmers to life in layers of magic and mystery. Watch the wonderlamp glint in the distance as golden sands swirl around you, while Genies and magic carpets drift through the skies. As you scroll, the Cave of Wonders roars open its mouth, and jewels sparkle with hidden secrets about the world of front-end enchantment. With parallax scrolls and animated wonder, this tale isn't just told — it's lived.",
         "videoExplainer": "",
         "imgThumbnail": "https://ehb-mct.github.io/cp-frontend-YounesEHB2023/Thumbnail.png",
@@ -184,7 +184,7 @@
             "https://ehb-mct.github.io/cp-frontend-ramon337/extra1.png",
             "https://ehb-mct.github.io/cp-frontend-ramon337/extra3.png"
         ],
-        "genre": "fantasie",
+        "genre": "avontuur",
         "storyFrom": "andere sprookjes"
     },
     {
@@ -314,14 +314,14 @@
         "fairytaleLink": "",
         "description": "De Vuurvogel is een betoverend sprookje over een magische, vurige vogel met gloeiende veren die in het donker schitteren. In het verhaal gaat een jonge held op zoek naar dit mythische wezen, dat vaak symbool staat voor hoop, vernieuwing of genezing. Onderweg komt hij voor moeilijke keuzes te staan, trotseert hij gevaar en leert hij belangrijke lessen over moed, liefde en opoffering. Het verhaal vindt zijn oorsprong in de Russische folklore en staat bekend om zijn mysterieuze, poëtische toon en rijke, wonderlijke beeldtaal.",
         "videoExplainer": "",
-        "imgThumbnail": "",
-        "imgBanner": "",
+        "imgThumbnail": "https://raw.githubusercontent.com/EHB-MCT/cp-frontend-BeatriceBjoko/refs/heads/main/public/assets/thumbnail_devuurvogel.png",
+        "imgBanner": "https://raw.githubusercontent.com/EHB-MCT/cp-frontend-BeatriceBjoko/refs/heads/main/public/assets/vuurvogel-banner.png",
         "imgsExtra": [
             "",
             "",
             ""
         ],
-        "genre": "avontuur",
+        "genre": "magie",
         "storyFrom": "uit Rusland"
     },
     {
@@ -362,9 +362,9 @@
         "id": "maxim-westerbeek-duimelijntje",
         "nameStudent": "Maxim Westerbeek ",
         "fairytale": "Duimelijntje",
-        "fairytaleLink": "/parallaxPage",
+        "fairytaleLink": "",
         "description": "Er was eens een klein meisje, niet groter dan een duim, dat uit een bloem werd geboren. Haar leven begon wondermooi, maar al gauw werd zij weggerukt door een lelijke pad die haar met zijn zoon wilde huwen. Zo begon voor Duimelijntje een lange reis vol gevaren en verdriet. Ze werd ontvoerd door een kever, leefde eenzaam in het bos, en moest schuilen voor de kou bij een veldmuis, die haar uithuwelijken wilde aan een rijke, maar saaie mol. Toch bleef haar hart verlangen naar licht, vrijheid en liefde. Dankzij een zwaluw die zij in de winter liefdevol verzorgde, nam die haar vóór het huwelijk mee. Vond zij uiteindelijk haar geluk in een warm land, waar zij trouwde met een prins van haar eigen grootte en naam kreeg als een de bloemenkoningin. En daar leefde zij gelukkig, in zon en bloemen, voor altijd.",
-        "videoExplainer": "Z0NkBj0q7Hw",
+        "videoExplainer": "-63Umofytqg",
         "imgThumbnail": "https://raw.githubusercontent.com/EHB-MCT/cp-frontend-MaximWesterbeek/refs/heads/main/course-project/public/assets/thumbnail_maxim-westerbeek.jpg",
         "imgBanner": "https://raw.githubusercontent.com/EHB-MCT/cp-frontend-MaximWesterbeek/refs/heads/main/course-project/public/assets/banner_maxim-westerbeek.jpg",
         "imgsExtra": [
@@ -413,7 +413,7 @@
         "id": "eren-sahbaz-keloglan",
         "nameStudent": "Eren Sahbaz",
         "fairytale": "Keloğlan",
-        "fairytaleLink": "",
+        "fairytaleLink": "https://ehb-mct.github.io/cp-frontend-ErenSahbaz1/#/cp-frontend-ErenSahbaz1/parallax",
         "description": "Keloğlan, wat 'kale jongen' betekent, is een centrale figuur in vele Turkse volksverhalen. In één van deze verhalen besluit Keloglan, een arme maar moedige jongeman, om de man van een reuzin te worden. Hij verlaat zijn moeder en gaat op avontuur, waarbij hij uiteindelijk de reuzin verslaat met behulp van een egel en als held terugkeert naar huis.",
         "videoExplainer": "",
         "imgThumbnail": "https://raw.githubusercontent.com/EHB-MCT/cp-frontend-ErenSahbaz1/refs/heads/main/public/cover_eren.png",
