@@ -4,6 +4,11 @@ import { useGetMakingOfItems } from '~/shared';
 import styles from '~styles/pages/makingof.module.scss';
 
 export const MakingOf = () => {
+    const fallbackImage = '/assets/img-not-found.png';
+    const handleImageError = (event: React.SyntheticEvent<HTMLImageElement, Event>) => {
+        event.currentTarget.src = fallbackImage;
+    };
+
     const { id } = useParams<{ id: string }>();
     const { isPending: isMakingOfItemsPending, data: makingOfItems } = useGetMakingOfItems();
 
@@ -21,14 +26,17 @@ export const MakingOf = () => {
         <div className={styles['makingOf-container']}>
             <h1 className={styles['makingOf-container__title']}>Making Of</h1>
 
-            <ThemeToggle />
+            <div className={styles['theme-toggle-container']}>
+                <ThemeToggle />
+            </div>
 
             <div className={styles['makingOf-container__card']}>
                 <div className={styles['makingOf-container__card__banner']}>
                     <img
-                        src={fairytale.imgBanner}
+                        src={fairytale.imgBanner || fallbackImage}
                         alt={fairytale.fairytale}
                         className={styles['makingOf-container__card__banner__img']}
+                        onError={handleImageError}
                     />
                     <div className={styles['makingOf-container__card__banner__info']}>
                         <h2 className={styles['makingOf-container__card__banner__info__fairytale']}>
@@ -49,7 +57,8 @@ export const MakingOf = () => {
                         <YoutubeEmbed embedId={fairytale.videoExplainer} />
                         {/* {fairytale.videoExplainer || "Geen video beschikbaar"} */}
                     </div>
-                    <p className={styles['makingOf-container__card__video-explainer__description']}>
+                    <p
+                        className={styles['makingOf-container__card__video-explainer__description']}>
                         {fairytale.description}
                     </p>
                 </div>
@@ -60,12 +69,13 @@ export const MakingOf = () => {
                     </h3>
                     <span className={styles['divider']}></span>
                     <div className={styles['makingOf-container__card__extra-images__image-container']}>
-                        {fairytale.imgsExtra?.map((img, index) => (
+                        {fairytale.imgsExtra.slice(0, 3).map((img, index) => (
                             <img
                                 key={index}
-                                src={img}
+                                src={img || fallbackImage}
                                 alt={`extra-img-${index}`}
                                 className={styles["makingOf-container__card__extra-images__image-container__img"]}
+                                onError={handleImageError}
                             />
                         ))}
                     </div>
