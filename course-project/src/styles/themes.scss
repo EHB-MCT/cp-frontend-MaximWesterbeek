@@ -43,7 +43,8 @@ $transition: background-color 0.3s ease;
         border: #E51131 solid 2px;
         filter: drop-shadow(4px 4px #E51131);
 
-        &:hover {
+        &:hover,
+        &--active {
             filter: drop-shadow(0px 0px);
             background-color: #E51131;
             color: #fff;
@@ -57,11 +58,11 @@ $transition: background-color 0.3s ease;
         border: #000 solid 2px;
         filter: drop-shadow(4px 4px #000);
 
-        &:hover {
+        &:hover,
+        &--active {
             filter: drop-shadow(0px 0px);
             background-color: #000;
             color: #fff;
-            border: #000 solid 2px;
         }
     }
 }
@@ -71,7 +72,7 @@ $transition: background-color 0.3s ease;
         background-color: #EBF5EC;
         color: #000;
         border: #E51131 solid 2px;
-        box-shadow: 3px 3px #E51131 inset;
+        box-shadow: 2px 2px #E51131 inset;
 
         &:hover {
             filter: drop-shadow(0px 0px);
@@ -85,7 +86,7 @@ $transition: background-color 0.3s ease;
         background-color: #EBF5EC;
         color: #000;
         border: #000 solid 2px;
-        box-shadow: 3px 3px #000 inset;
+        box-shadow: 2px 2px #000 inset;
 
         &:hover {
             filter: drop-shadow(0px 0px);
@@ -106,44 +107,51 @@ $transition: background-color 0.3s ease;
     }
 }
 
-.theme-toggle {
-    padding: 5px;
-    margin: 5px;
-    background: lightgray;
+@mixin theme-styles-makingof-border($light: true) {
+    @if $light {
+        border: #000 solid 4px;
+    }
 
-    background-color: #EBF5EC;
-    color: #000;
-    border: #000 solid 2px;
-    border-radius: 10px;
-    filter: drop-shadow(4px 4px #000);
+    @else {
+        border: #E51131 solid 4px;
+    }
 }
 
+@mixin theme-styles-makingof-outline($light: true) {
+    @if $light {
+        outline: #000 solid 3px;
+    }
 
+    @else {
+        outline: #E51131 solid 3px;
+    }
+}
 
+.theme-toggle {
+    padding: 5px 4px 3px 5px;
+    margin-right: 4px;
+    border-radius: 10px;
 
+    transition: all 0.1s ease-in-out;
 
+    @include theme-styles-btn(false);
 
+    :global(body.dark-mode) & {
+        @include theme-styles-btn(true);
+    }
 
+    &:hover {
+        translate: 4px 4px;
+    }
 
+    &__theme-icon {
+        width: 28px;
 
-// body.light-mode {
-//     background-color: white;
-//     color: black;
-// }
+        filter: invert(0);
+        transition: all 0.1s ease-in-out;
 
-// body.dark-mode {
-//     background-color: #121212;
-//     color: white;
-// }
-
-
-
-// .light-mode {
-//     background-color: white;
-//     color: black;
-// }
-
-// .dark-mode {
-//     background-color: #121212;
-//     color: white;
-// }
+        .theme-toggle:hover & {
+            filter: invert(1);
+        }
+    }
+}
