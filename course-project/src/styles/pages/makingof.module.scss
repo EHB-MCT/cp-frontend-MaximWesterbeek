@@ -39,6 +39,8 @@ h3 {
         background-color: #E51131;
         border-radius: 0px 10px 10px 0px;
 
+        transition: all 0.1s ease-in-out;
+
         @include theme-styles-border(true);
 
         :global(body.dark-mode) & {
@@ -55,12 +57,17 @@ h3 {
         grid-template-rows: repeat(3, auto);
         grid-row-gap: 40px;
 
-        margin-bottom: 30px;
-
         background-color: #EBF5EC;
         border-radius: 15px;
-        border: #000 solid 4px;
         box-shadow: rgba(0, 0, 0, 0.5) 0px 4px 12px;
+
+        transition: all 0.1s ease-in-out;
+
+        @include theme-styles-makingof-border(true);
+
+        :global(body.dark-mode) & {
+            @include theme-styles-makingof-border(false);
+        }
 
         &__banner {
             grid-column: 1/2;
@@ -73,7 +80,14 @@ h3 {
             grid-template-rows: 1fr;
 
             border-radius: 10px;
-            outline: #000 solid 3px;
+
+            transition: all 0.1s ease-in-out;
+
+            @include theme-styles-makingof-outline(true);
+
+            :global(body.dark-mode) & {
+                @include theme-styles-makingof-outline(false);
+            }
 
             &__img {
                 width: 100%;
@@ -149,7 +163,7 @@ h3 {
                 line-height: 28px;
 
                 align-self: center;
-                margin-right: 10px
+                margin-right: 10px;
             }
         }
 
@@ -183,6 +197,8 @@ h3 {
 
                 &__img {
                     width: 98.6%;
+                    aspect-ratio: 1/1;
+                    object-fit: cover;
 
                     border: #000 solid 3px;
                     border-radius: 10px;
@@ -203,9 +219,12 @@ h3 {
     margin-right: 5px;
 }
 
-.theme-toggle {
+.theme-toggle-container {
     grid-column: 12/13;
     grid-row: 1/2;
+
+    align-self: center;
+    justify-self: end;
 }
 
 .video-responsive {
