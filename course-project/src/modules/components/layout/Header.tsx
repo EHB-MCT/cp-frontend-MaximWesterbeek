@@ -5,7 +5,8 @@ import { useGetParallaxLink } from '~/shared/hooks/useGetParallaxLink';
 
 export const Header = () => {
     const location = useLocation();
-    const isParallaxOrMakingOf = location.pathname.includes('/parallaxPage') || location.pathname.includes('/makingOf');
+    const isParallaxOrMakingOf = location.pathname.includes('/parallax') || location.pathname.includes('/makingOf');
+    const isHome = location.pathname === '/';
 
     const params = useParams<{ id: string }>();
     const queryParams = new URLSearchParams(location.search);
@@ -15,47 +16,40 @@ export const Header = () => {
     const matchedItem = parallaxLinkItems?.find(item => item.id === id);
     const fairytaleLink = matchedItem?.fairytaleLink;
 
+    const renderButtons = () => {
+        if (isParallaxOrMakingOf) {
+            return (
+                <>
+                    <Button name="Home" link="/" />
+                    {fairytaleLink && <Button name="Sprookje" link={`/parallax/${id}`} />}
+                    <Button name="Making-Of" link={`/makingOf/${id}`} />
+                </>
+            );
+        }
+
+        return (
+            <>
+                <Button name="Home" link="/" />
+                <Button name="Sprookjes" link="/fairytales" />
+                <Button name="About" link="/about" />
+            </>
+        );
+    };
+
     return (
-        <nav className={styles['navbar']}>
-            {!isParallaxOrMakingOf && (
-                <>
-                    <div className={styles['navbar__nav-wrapper']}>
-                        <Link to="/">
-                            <img src="/assets/logo_white.svg" alt="Er was eens..." className={styles['navbar__nav-wrapper__logo']} />
-                        </Link>
+        <nav className={`${styles['navbar']} ${isHome ? styles['navbar--hidden'] : ''}`}>
+            <div className={styles['navbar__container']}>
+                <div className={`${styles['navbar__container__nav-wrapper']} ${isHome ? styles['navbar__container__nav-wrapper--hidden'] : ''}`}>
+                    <Link to="/">
+                        <img src="/assets/logo_white.svg" alt="Er was eens..." className={`${styles['navbar__container__nav-wrapper__logo']} ${isHome ? styles['navbar__container__nav-wrapper__logo--hidden'] : ''}`} />
+                    </Link>
 
-                        <div className={styles['navbar__nav-wrapper__nav-buttons']}>
-                            <Button name="Home" link="/" />
-
-                            <Button name="Sprookjes" link="/fairytales" />
-
-                            <Button name="About" link="/about" />
-                        </div>
+                    <div className={styles['navbar__container__nav-wrapper__nav-buttons']}>
+                        {renderButtons()}
                     </div>
-                    <img src="/assets/element_header-footer.svg" alt="clouds" className={styles['navbar__element']} />
-                </>
-            )}
-
-            {isParallaxOrMakingOf && (
-                <>
-                    <div className={styles['navbar__nav-wrapper']}>
-                        <Link to="/">
-                            <img src="/assets/logo_white.svg" alt="Er was eens..." className={styles['navbar__nav-wrapper__logo']} />
-                        </Link>
-
-                        <div className={styles['navbar__nav-wrapper__nav-buttons']}>
-                            <Button name="Home" link="/" />
-
-                            {fairytaleLink && (
-                                <Button name="Sprookje" link={`${fairytaleLink}?id=${id}`} />
-                            )}
-
-                            <Button name="Making-Of" link={`/makingOf/${id}`} />
-                        </div>
-                    </div>
-                    <img src="/assets/element_header-footer.svg" alt="clouds" className={styles['navbar__element']} />
-                </>
-            )}
+                </div>
+            </div>
+            <div className={`${styles['navbar__element']} ${isHome ? styles['navbar__element--hidden'] : ''}`} />
         </nav>
     );
 }
