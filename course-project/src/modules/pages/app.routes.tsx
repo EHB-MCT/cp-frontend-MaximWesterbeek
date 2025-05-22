@@ -5,6 +5,7 @@ import { Fairytales } from './Fairytales';
 import { Layout } from '~/components';
 import { MakingOf } from './Makingof';
 import { ParallaxPage } from './ParallaxPage';
+import { ParallaxWrapperPage } from './ParallaxWrapperPage';
 
 
 export const router = createBrowserRouter([
@@ -27,6 +28,10 @@ export const router = createBrowserRouter([
             {
                 path: "parallaxPage",
                 element: <ParallaxPage />
+            },
+            {
+                path: "parallax/:id",
+                element: <ParallaxWrapperPage />
             },
             {
                 path: "*",
