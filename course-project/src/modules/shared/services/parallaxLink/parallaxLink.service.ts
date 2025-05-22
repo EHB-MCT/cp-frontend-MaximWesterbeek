@@ -1,16 +1,20 @@
-import fairytaleList from "~/shared/mock/fairytaleList.json";
 import { parallaxLinkType } from "./parallaxLink.service.types";
 
 class ParallaxLinkService {
-    getParallaxLinkItems(): Promise<parallaxLinkType[]> {
-        return new Promise<parallaxLinkType[]>((resolve) => {
-            resolve(
-                fairytaleList.map((item) => ({
-                    id: item.id,
-                    fairytaleLink: item.fairytaleLink
-                }))
-            );
-        });
+    async getParallaxLinkItems(): Promise<parallaxLinkType[]> {
+        const response = await fetch("/api/fairytaleList.json");
+        if (!response.ok) {
+            throw new Error("Failed to fetch fairytale list");
+        }
+
+        const fairytaleList = await response.json();
+
+        const items: parallaxLinkType[] = fairytaleList.map((item: any) => ({
+            id: item.id,
+            fairytaleLink: item.fairytaleLink,
+        }));
+
+        return items;
     }
 }
 export const parallaxLinkService = new ParallaxLinkService();

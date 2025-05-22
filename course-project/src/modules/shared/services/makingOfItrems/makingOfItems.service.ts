@@ -1,23 +1,25 @@
-import fairytaleList from "~/shared/mock/fairytaleList.json";
 import { makingOfItemsType } from "./makingOfItems.service.types";
 
 class MakingOfItemsService {
-    getMakingOfItems(): Promise<makingOfItemsType[]> {
-        return new Promise<makingOfItemsType[]>((resolve) => {
-            setTimeout(() => {
-                resolve(
-                    fairytaleList.map((item) => ({
-                        id: item.id,
-                        nameStudent: item.nameStudent,
-                        fairytale: item.fairytale,
-                        description: item.description,
-                        videoExplainer: item.videoExplainer,
-                        imgBanner: item.imgBanner,
-                        imgsExtra: item.imgsExtra,
-                    }))
-                );
-            }, 2000);
-        });
+    async getMakingOfItems(): Promise<makingOfItemsType[]> {
+        const response = await fetch("/api/fairytaleList.json");
+        if (!response.ok) {
+            throw new Error("Failed to fetch fairytale list");
+        }
+
+        const fairytaleList = await response.json();
+
+        const items: makingOfItemsType[] = fairytaleList.map((item: any) => ({
+            id: item.id,
+            nameStudent: item.nameStudent,
+            fairytale: item.fairytale,
+            description: item.description,
+            videoExplainer: item.videoExplainer,
+            imgBanner: item.imgBanner,
+            imgsExtra: item.imgsExtra,
+        }));
+
+        return items;
     }
 }
 export const makingOfItemsService = new MakingOfItemsService();

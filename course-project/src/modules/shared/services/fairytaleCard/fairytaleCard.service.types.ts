@@ -4,4 +4,5 @@ export interface FairytaleCardType {
     fairytale: string;
     fairytaleLink: string;
     imgThumbnail: string;
+    storyFrom: string;
 }
