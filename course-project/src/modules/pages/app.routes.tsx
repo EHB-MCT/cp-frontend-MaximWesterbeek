@@ -4,7 +4,6 @@ import { Home } from './Home';
 import { Fairytales } from './Fairytales';
 import { Layout } from '~/components';
 import { MakingOf } from './Makingof';
-import { ParallaxPage } from './ParallaxPage';
 import { ParallaxWrapperPage } from './ParallaxWrapperPage';
 
 
@@ -24,10 +23,6 @@ export const router = createBrowserRouter([
             {
                 path: "makingOf/:id",
                 element: <MakingOf />
-            },
-            {
-                path: "parallaxPage",
-                element: <ParallaxPage />
             },
             {
                 path: "parallax/:id",
