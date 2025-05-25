@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://ehb-mct.github.io/cp-frontend-MaximWesterbeek",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
