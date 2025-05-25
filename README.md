@@ -1,10 +1,6 @@
-<<<<<<< Updated upstream
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/OwWY7ss_)
-[![Open in Codespaces](https://classroom.github.com/assets/launch-codespace-2972f46106e565e64193e422d61a12cf1da4916b45550586e14ef0a7c637dd04.svg)](https://classroom.github.com/open-in-codespaces?assignment_repo_id=19233411)
-=======
 # Fairytales!
 
-This project is a creative web development assignment focused on building an interactive and visually engaging one-page scrolling website based on a fairytale. In addition to the main fairytale site, a central portal was developed to showcase all student projects. The portal includes a homepage with random featured projects, a full project gallery, and a “Making Of” section explaining the development process.
+This project is a creative web development assignment focused on building an interactive and visually engaging one-page scrolling website based on a fairytale. In addition to the main fairytale site, a central portal was developed to showcase all student projects. The portal includes a homepage with random featured projects, a full project gallery, and a “Making Of” section explaining the development process and show some extra images.
 
 ## Table of Contents
 1. [Project Setup](#project-setup)
@@ -81,9 +77,12 @@ This project is licensed under the **MIT License**. See the [LICENSE](./LICENSE)
 - [YouTube video embedding tutorial](https://dev.to/bravemaster619/simplest-way-to-embed-a-youtube-video-in-your-react-app-3bk2)
 - [Border radius on YouTube IFrame embed](https://stackoverflow.com/questions/7811719/adding-border-radius-for-embedded-youtube-video)
 - [Partial code for theme toggle, mixed with the theme toggle made during the course](https://github.com/chris-jantzen/react-typescript-theme-toggle/)
+- [Fallback image logic](https://patrickpassarella.com/blog/image-fallback-component)
+- [Scroll to logic code](https://bobbyhadz.com/blog/react-scroll-to-element-on-click)
+- [Scroll to logic implementation](https://chatgpt.com/share/68336add-5c20-8006-8041-4e0b3e775a58)
+- [Line breaks in JSON](https://iifx.dev/en/articles/122124)
 
-https://patrickpassarella.com/blog/image-fallback-component
-https://www.andersenstories.com/nl/andersen_sprookjes/duimelijntje
-https://www.behance.net/gallery/18478021/Hans-Christian-Andersen-Thumbelina-
-https://www.behance.net/taschaka
->>>>>>> Stashed changes
+### Fairytale story and artwork
+- [Story](https://www.andersenstories.com/nl/andersen_sprookjes/duimelijntje)
+- [Artwork](https://www.behance.net/gallery/18478021/Hans-Christian-Andersen-Thumbelina-)
+- [Artist behind the artwork](https://www.behance.net/taschaka)
