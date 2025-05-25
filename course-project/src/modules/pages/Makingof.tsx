@@ -22,6 +22,8 @@ export const MakingOf = () => {
         return <p>Sorry, dit sprookje is niet gevonden.</p>;
     }
 
+    const lineBreak = fairytale.description.replace(/\n/g, "<br><br>")
+
     return (
         <div className={styles['makingOf-container']}>
             <h1 className={styles['makingOf-container__title']}>Making Of</h1>
@@ -58,8 +60,9 @@ export const MakingOf = () => {
                         {/* {fairytale.videoExplainer || "Geen video beschikbaar"} */}
                     </div>
                     <p
-                        className={styles['makingOf-container__card__video-explainer__description']}>
-                        {fairytale.description}
+                        className={styles['makingOf-container__card__video-explainer__description']}
+                        dangerouslySetInnerHTML={{ __html: lineBreak }}
+                    >
                     </p>
                 </div>
 

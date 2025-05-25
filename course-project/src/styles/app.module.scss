@@ -2,26 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bungee&family=Geologica:wght@100..900&display=swap');
-
-body {}
-
-.container-wrapper {
-    // display: grid;
-    // grid-template-columns: repeat(12, 1fr);
-    // grid-template-rows: repeat(3, minmax(50px, auto));
-    // grid-column-gap: 20px;
-}
-
-// .home-container,
-// .fairytale-container {
-//     grid-column: 1/13;
-//     grid-row: 2/3;
-
-//     display: grid;
-//     grid-template-columns: repeat(12, 1fr);
-//     grid-template-rows: repeat(8, minmax(50px, auto));
-//     grid-column-gap: 20px;
-// }
+@import url("https://use.typekit.net/wef8tvx.css");
 
 
 
@@ -128,7 +109,7 @@ body {}
         background-repeat: no-repeat;
         background-position: top center;
 
-        height: 66px;
+        height: 60px;
         width: 100%;
         z-index: 1;
         position: absolute;
