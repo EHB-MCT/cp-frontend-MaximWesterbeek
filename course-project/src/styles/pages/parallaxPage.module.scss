@@ -1,5 +1,342 @@
-.parallaxPage-container {
-    background-color: lightblue;
-    width: 100%;
+$white: #FFFFFF;
+$background: rgb(239, 241, 243);
+$blue: #0a78f2;
+$black: rgb(17, 17, 17);
+$stateHover: #f2b40a;
+
+.parallax-container {
+    background-color: #000;
+
+    font-family: 'Geologica', sans-serif;
+}
+
+/* ----- HorizontalBirdFlying  ----- */
+
+.bird-flying {
+    height: 220vh;
+    position: relative;
+    isolation: isolate;
+
+    &__sticky-container {
+        position: sticky;
+        top: 0;
+        height: 100vh;
+        overflow: hidden;
+
+        &__bg-image {
+            background-size: cover;
+            background-position: center;
+            position: absolute;
+            width: 100%;
+            height: 100vh;
+            z-index: 0;
+        }
+
+        &__bird-image {
+            background-size: cover;
+            background-position: center;
+            position: absolute;
+            top: 11vh;
+            width: 680px;
+            height: 860px;
+            z-index: 1;
+        }
+    }
+}
+
+/* ----- HorizontalDrifting  ----- */
+
+.drifting {
     height: 100vh;
+    position: relative;
+    isolation: isolate;
+
+    &__sticky-container {
+        position: sticky;
+        top: 0;
+        height: 100vh;
+        overflow: hidden;
+
+        &__bg-image {
+            background-size: cover;
+            background-position: center;
+            position: absolute;
+            width: 100%;
+            height: 100vh;
+            z-index: 0;
+        }
+
+        &__drift-image {
+            background-size: cover;
+            background-position: center;
+            position: absolute;
+            top: 33.4vh;
+            width: 370px;
+            height: 350px;
+            z-index: 1;
+        }
+
+        &__clickable-box {
+            position: absolute;
+            top: 33.5vh;
+            left: 47.7%;
+            width: 160px;
+            height: 160px;
+            cursor: pointer;
+            background-color: rgba(255, 0, 0, 0.0);
+            border-radius: 50px;
+            z-index: 2;
+        }
+    }
+}
+
+/* ----- HorizontalMaskT  ----- */
+
+.horizontal-mask {
+    position: relative;
+    height: 220vh;
+    isolation: isolate;
+
+    &__sticky-image.inset {
+        inset: 0;
+    }
+
+    &__sticky-image {
+        background-size: cover;
+        background-position: center;
+        position: sticky;
+        top: 0;
+        height: 100vh;
+        z-index: 0;
+
+        &__overlay-text {
+            position: absolute;
+            color: white;
+            font-size: 32px;
+            background: #738A63;
+            padding: 10px 15px;
+            border-radius: 10px;
+            max-width: 35%;
+            z-index: 1;
+        }
+    }
+}
+
+/* ----- HorizontalScrollT  ----- */
+
+.horizontal-scroll {
+    height: 300vh;
+    position: relative;
+
+    &__sticky-container {
+        position: sticky;
+        top: 0;
+        height: 100vh;
+        overflow: hidden;
+
+        &__bg-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+
+            &__clickable-box {
+                position: absolute;
+                width: 200px;
+                height: 200px;
+                background-color: rgba(0, 0, 0, 0.0);
+                border-radius: 50px;
+                cursor: pointer;
+                pointer-events: auto;
+            }
+
+            &__clickable-box.right {
+                top: 12vh;
+                left: 51%;
+                z-index: 999;
+                will-change: transform;
+            }
+
+            &__clickable-box.left {
+                top: 29vh;
+                left: 8%;
+                z-index: 10;
+            }
+        }
+
+        &__seam-text-container {
+            position: absolute;
+            height: 100vh;
+            width: 100%;
+            right: -50%;
+            z-index: 2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            pointer-events: none;
+
+            &__seam-text1,
+            &__seam-text2 {
+                color: white;
+                font-size: 32px;
+
+                background-color: #738A63;
+                padding: 10px 15px;
+                border-radius: 10px;
+
+                height: 200px;
+                width: 25%;
+
+                align-content: center;
+            }
+
+            &__seam-text1 {
+                text-align: right;
+            }
+
+            &__seam-text2 {
+                text-align: left;
+            }
+        }
+    }
+}
+
+/* ----- VerticalImageScrollT  ----- */
+
+.image-scroll {
+    height: 180vh;
+    position: relative;
+
+    &__sticky-container {
+        position: sticky;
+        top: 0;
+        height: 100vh;
+        overflow: hidden;
+
+        &__image {
+            height: 220vh;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+/* ----- VerticalOverlayT ----- */
+
+
+/* ----- VerticalscrollT & VerticalTextAppear ----- */
+
+.vertical-scroll {
+    height: 100vh;
+    position: relative;
+
+    &__sticky-container {
+        position: relative;
+        height: 150vh;
+
+        &__bg-image {
+            background-size: cover;
+            background-position: center;
+            position: sticky;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+            z-index: 0;
+
+            &__text-content {
+                position: absolute;
+                top: 27%;
+                right: 10%;
+                color: white;
+                font-size: 32px;
+                z-index: 10;
+                background-color: #000;
+                border-radius: 10px;
+                padding: 10px 15px;
+            }
+        }
+    }
+}
+
+/* ----- VerticalWipeT ----- */
+
+.vertical-wipe {
+    position: relative;
+    height: 270vh;
+    isolation: isolate;
+
+    &__bg-image-top,
+    &__bg-image-bottom {
+        background-size: cover;
+        background-position: center;
+        position: sticky;
+        height: 100vh;
+        z-index: 0;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &__title-container {
+            font-family: "tarif", sans-serif;
+            font-weight: 400;
+            color: #fff;
+
+            background-color: #738A63;
+            padding: 50px;
+            border-radius: 20px;
+            border: 4px solid #000;
+
+            position: sticky;
+            width: 600px;
+
+            &__title {
+                text-align: center;
+                font-size: 92px;
+                font-weight: bold;
+            }
+        }
+    }
+
+    &__bg-image-top {
+        top: 0;
+    }
+
+    &__bg-image-bottom {
+        inset: 0;
+    }
+
+    &__story-bar {
+        position: absolute;
+        top: 0;
+        height: 250px;
+        width: 100%;
+        background-color: #000;
+        z-index: 1;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        color: white;
+        font-size: 32px;
+    }
+}
+
+/* ----- StorySection ----- */
+
+.story-section {
+    position: relative;
+    top: 0;
+    width: 100%;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 32px;
+    text-align: center;
 }
