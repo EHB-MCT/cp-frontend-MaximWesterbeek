@@ -1,22 +1,10 @@
-import { useMemo, useState } from 'react';
 import { Link } from 'react-router';
-import { FairytaleCard, Loader, SearchBar, ThemeToggle } from '~/components';
+import { FairytaleCard, Loader, ThemeToggle } from '~/components';
 import { useGetFairytaleCardItems } from '~/shared';
 import styles from '~styles/pages/home.module.scss';
 
 export const Home: React.FC = () => {
     const { isPending: isFairytaleCardPending, data: fairytaleCard } = useGetFairytaleCardItems();
-    const [searchTerm, setSearchTerm] = useState('');
-
-    const filteredFairytales = useMemo(() => {
-        if (!fairytaleCard) return [];
-
-        return fairytaleCard
-            .filter((card) =>
-                card.fairytale.toLowerCase().includes(searchTerm.toLowerCase())
-            )
-            .slice(0, 8)
-    }, [fairytaleCard, searchTerm]);
 
     return (
         <div className={styles['home-container']}>
@@ -26,9 +14,6 @@ export const Home: React.FC = () => {
                     <img src="/assets/logo_white.svg" alt="Er was eens..." className={styles['home-container__welcome-section__info__logo']} />
                     <h1 className={styles['home-container__welcome-section__info__title']}>De sprookjes poortaalsite voor alle interactieve sprookjeservaringen.</h1>
                 </div>
-                {/* <div className={styles['home-container__welcome-section__search-bar-container']}>
-                    <SearchBar searchTerm={searchTerm} onSearchChange={setSearchTerm} />
-                </div> */}
                 <div className={styles['home-container__welcome-section__element']} />
             </div>
 
@@ -40,8 +25,8 @@ export const Home: React.FC = () => {
             <div className={styles['card-container']}>
                 {isFairytaleCardPending ? (
                     <Loader />
-                ) : filteredFairytales.length > 0 ? (
-                    filteredFairytales.map((fairytaleCard) => (
+                ) : (
+                    fairytaleCard?.slice(0, 8).map((fairytaleCard) => (
                         <FairytaleCard
                             key={fairytaleCard.id}
                             id={fairytaleCard.id}
@@ -52,11 +37,6 @@ export const Home: React.FC = () => {
                             storyFrom={fairytaleCard.storyFrom}
                         />
                     ))
-                ) : (
-                    <div className={styles['no-results']}>
-                        <div className={styles['no-results__gif']} />
-                        <h2 className={styles['no-results__title']}>Oeps! Geen sprookjes gevonden die bij je zoekopdracht passen.</h2>
-                    </div>
                 )}
             </div>
 
