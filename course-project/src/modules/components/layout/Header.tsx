@@ -2,8 +2,13 @@ import styles from '~styles/app.module.scss';
 import { Button } from '../ui/Button';
 import { Link, useLocation, useParams } from 'react-router';
 import { useGetParallaxLink } from '~/shared/hooks/useGetParallaxLink';
+import { RefObject } from 'react';
 
-export const Header = () => {
+interface HeaderProps {
+    aboutRef: RefObject<HTMLDivElement | null>;
+}
+
+export const Header = ({ aboutRef }: HeaderProps) => {
     const location = useLocation();
     const isParallaxOrMakingOf = location.pathname.includes('/parallax') || location.pathname.includes('/makingOf');
     const isHome = location.pathname === '/';
@@ -15,6 +20,10 @@ export const Header = () => {
     const { data: parallaxLinkItems } = useGetParallaxLink();
     const matchedItem = parallaxLinkItems?.find(item => item.id === id);
     const fairytaleLink = matchedItem?.fairytaleLink;
+
+    const handleAboutClick = () => {
+        aboutRef?.current?.scrollIntoView({ behavior: 'smooth' });
+    };
 
     const renderButtons = () => {
         if (isParallaxOrMakingOf) {
@@ -31,7 +40,12 @@ export const Header = () => {
             <>
                 <Button name="Home" link="/" />
                 <Button name="Sprookjes" link="/fairytales" />
-                <Button name="About" link="/about" />
+                <button
+                    onClick={handleAboutClick}
+                    className={styles['button']}
+                >
+                    <p className={styles['button__title']}>About</p>
+                </button>
             </>
         );
     };

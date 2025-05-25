@@ -134,7 +134,7 @@
             // height: 82px;
 
             &--hidden {
-                padding: 29px 10px 0px 10px;
+                padding: 28px 10px 0px 10px;
             }
 
             &__logo {
@@ -276,9 +276,10 @@
     color: #000;
     font-family: 'Bungee', sans-serif;
 
-    padding: 11px 19px 9px 19px;
+    padding: 9px 19px 7px 19px;
     margin: 0px 11px;
     justify-self: center;
+    align-content: center;
 
     border: #000 solid 2px;
     border-radius: 10px;

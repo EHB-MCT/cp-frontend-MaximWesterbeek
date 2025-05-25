@@ -2,10 +2,14 @@ import styles from '~styles/app.module.scss';
 import { Button } from '../ui/Button';
 import { Link, useLocation, useParams } from 'react-router';
 import { useGetParallaxLink } from '~/shared';
-import { useContext } from 'react';
+import { RefObject, useContext } from 'react';
 import { ThemeContext } from '~/shared/services/ThemeContextHandler';
 
-export const Footer = () => {
+interface FooterProps {
+    aboutRef: RefObject<HTMLDivElement | null>;
+}
+
+export const Footer = ({ aboutRef }: FooterProps) => {
     const location = useLocation();
     const isParallaxOrMakingOf = location.pathname.includes('/parallax') || location.pathname.includes('/makingOf');
 
@@ -53,7 +57,7 @@ export const Footer = () => {
                         />
                     </Link>
 
-                    <div className={styles['footer__container__nav-wrapper__about']}>
+                    <div ref={aboutRef} className={styles['footer__container__nav-wrapper__about']}>
                         <h1>About</h1>
                         <p>
                             Deze website is een portaalsite van een verzameling van sprookjesverhalen, verteld in de vorm van een interactieve parallax website. Elk sprookje heeft zijn eigen website waarin het sprookje verteld wordt terwijl je scrollt.
@@ -69,4 +73,4 @@ export const Footer = () => {
             </div>
         </nav>
     );
-}
+};
