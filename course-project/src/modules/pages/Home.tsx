@@ -11,7 +11,11 @@ export const Home: React.FC = () => {
 
             <div className={styles['home-container__welcome-section']}>
                 <div className={styles['home-container__welcome-section__info']}>
-                    <img src="/assets/logo_white.svg" alt="Er was eens..." className={styles['home-container__welcome-section__info__logo']} />
+                    <img
+                        src={`${import.meta.env.BASE_URL}assets/logo_white.svg`}
+                        alt="Er was eens..."
+                        className={styles['home-container__welcome-section__info__logo']}
+                    />
                     <h1 className={styles['home-container__welcome-section__info__title']}>De sprookjes poortaalsite voor alle interactieve sprookjeservaringen.</h1>
                 </div>
                 <div className={styles['home-container__welcome-section__element']} />

@@ -3,7 +3,7 @@ import { FairytaleCardType } from '~/shared/services/fairytaleCard/fairytaleCard
 import styles from '~styles/app.module.scss';
 
 export const FairytaleCard = ({ id, nameStudent, fairytale, imgThumbnail }: FairytaleCardType) => {
-    const fallbackImage = '/assets/img-not-found.png';
+    const fallbackImage = `${import.meta.env.BASE_URL}assets/img-not-found.png`;
     const handleImageError = (event: React.SyntheticEvent<HTMLImageElement, Event>) => {
         event.currentTarget.src = fallbackImage;
     };
