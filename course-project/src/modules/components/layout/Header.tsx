@@ -9,6 +9,8 @@ interface HeaderProps {
 }
 
 export const Header = ({ aboutRef }: HeaderProps) => {
+    const asset = (filename: string) => `${import.meta.env.BASE_URL}assets/${filename}`;
+
     const location = useLocation();
     const isParallaxOrMakingOf = location.pathname.includes('/parallax') || location.pathname.includes('/makingOf');
     const isHome = location.pathname === '/';
@@ -55,7 +57,7 @@ export const Header = ({ aboutRef }: HeaderProps) => {
             <div className={styles['navbar__container']}>
                 <div className={`${styles['navbar__container__nav-wrapper']} ${isHome ? styles['navbar__container__nav-wrapper--hidden'] : ''}`}>
                     <Link to="/">
-                        <img src="/assets/logo_white.svg" alt="Er was eens..." className={`${styles['navbar__container__nav-wrapper__logo']} ${isHome ? styles['navbar__container__nav-wrapper__logo--hidden'] : ''}`} />
+                        <img src={asset("logo_white.svg")} alt="Er was eens..." className={`${styles['navbar__container__nav-wrapper__logo']} ${isHome ? styles['navbar__container__nav-wrapper__logo--hidden'] : ''}`} />
                     </Link>
 
                     <div className={styles['navbar__container__nav-wrapper__nav-buttons']}>

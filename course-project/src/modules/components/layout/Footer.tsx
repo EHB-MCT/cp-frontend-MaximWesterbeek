@@ -10,6 +10,8 @@ interface FooterProps {
 }
 
 export const Footer = ({ aboutRef }: FooterProps) => {
+    const asset = (filename: string) => `${import.meta.env.BASE_URL}assets/${filename}`;
+
     const location = useLocation();
     const isParallaxOrMakingOf = location.pathname.includes('/parallax') || location.pathname.includes('/makingOf');
 
@@ -51,7 +53,7 @@ export const Footer = ({ aboutRef }: FooterProps) => {
                 <div className={styles['footer__container__nav-wrapper']}>
                     <Link to="/">
                         <img
-                            src={theme ? "/assets/logo_red.svg" : "/assets/logo_white.svg"}
+                            src={theme ? asset("logo_red.svg") : asset("logo_white.svg")}
                             alt="Er was eens..."
                             className={styles['footer__container__nav-wrapper__logo']}
                         />

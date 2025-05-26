@@ -17,7 +17,7 @@ export const HorizontalScrollT = ({ topImage, bottomImage, text1, text2 }: { top
     // Text scrolls with images, so we pin it at the seam between top & bottom
     const textX = useTransform(scrollYProgress, [0.1, .55], ["0%", "-100%"]);
 
-    const audio = new Audio("/assets/audio/sfx_frog-sound.mp3");
+    const audio = new Audio(`${import.meta.env.BASE_URL}assets/audio/sfx_frog-sound.mp3`);
     const handlePlaySound = () => {
         audio.currentTime = 0; // reset if already playing
         audio.play();

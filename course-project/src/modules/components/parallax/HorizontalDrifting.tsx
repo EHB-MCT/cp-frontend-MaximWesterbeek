@@ -12,7 +12,7 @@ export const HorizontalDrifting = ({ imgUrl, driftUrl }: { imgUrl: string; drift
     const birdX = useTransform(scrollYProgress, [0, 1], ["20vw", "35vw"]);
 
     // Create audio instance (replace with your own sound file)
-    const audio = new Audio("/assets/audio/sfx_frog-sound.mp3");
+    const audio = new Audio(`${import.meta.env.BASE_URL}assets/audio/sfx_frog-sound.mp3`);
     const handlePlaySound = () => {
         audio.currentTime = 0; // reset if already playing
         audio.play();
