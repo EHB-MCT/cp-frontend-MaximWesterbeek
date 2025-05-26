@@ -40,7 +40,6 @@ export const Footer = ({ aboutRef }: FooterProps) => {
             <>
                 <Button name="Home" link="/" />
                 <Button name="Sprookjes" link="/fairytales" />
-                <Button name="About" link="/about" />
             </>
         );
     };
