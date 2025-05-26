@@ -58,7 +58,7 @@ To get started with the project, follow these steps:
    ```
    This will create an optimized build of your project in the `dist/` folder.
 
-5. **Deployment to GitHub Pages**
+5. **Deployment to GitHub Pages**  
    Install the GitHub Pages package:
    ```bash
    npm install gh-pages --save-dev
