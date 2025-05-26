@@ -4,7 +4,7 @@ import { useGetMakingOfItems } from '~/shared';
 import styles from '~styles/pages/makingof.module.scss';
 
 export const MakingOf = () => {
-    const fallbackImage = '/assets/img-not-found.png';
+    const fallbackImage = `${import.meta.env.BASE_URL}assets/img-not-found.png`;
     const handleImageError = (event: React.SyntheticEvent<HTMLImageElement, Event>) => {
         event.currentTarget.src = fallbackImage;
     };

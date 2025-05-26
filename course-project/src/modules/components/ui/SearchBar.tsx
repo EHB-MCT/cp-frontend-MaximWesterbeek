@@ -6,7 +6,7 @@ export const SearchBar = ({ searchTerm, onSearchChange }: SearchBarItem) => {
         <form className={styles['search-bar']} onSubmit={(event) => event.preventDefault()}>
             <div className={styles['search-bar__search-wrapper']}>
                 <img
-                    src="/assets/icon_search.svg"
+                    src={`${import.meta.env.BASE_URL}assets/icon_search.svg`}
                     alt="magnifying glass"
                     className={styles['search-bar__search-wrapper__search-icon']}
                 />
