@@ -1,5 +1,4 @@
 export { StorySection } from "./StorySection";
-export { VerticalOverlayT } from "./VerticalOverlayT";
 export { HorizontalScrollT } from "./HorizontalScrollT";
 export { VerticalWipeT } from "./VerticalWipeT";
 export { HorizontalMaskT } from "./HorizontalMaskT";

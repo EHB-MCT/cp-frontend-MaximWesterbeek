@@ -8,6 +8,7 @@ export const HorizontalMaskT = ({ topImage, bottomImage, text1, text2 }: { topIm
         offset: ["start end", "end start"],
     });
 
+    // Clip transoformations for the top and bottom images based on scroll progress
     const clipPathTop = useTransform(
         scrollYProgress,
         [0, 1],
@@ -21,7 +22,6 @@ export const HorizontalMaskT = ({ topImage, bottomImage, text1, text2 }: { topIm
 
     return (
         <div ref={ref} className="horizontal-mask">
-            {/* Top Image */}
             <motion.div
                 className="horizontal-mask__sticky-image"
                 style={{
@@ -29,10 +29,12 @@ export const HorizontalMaskT = ({ topImage, bottomImage, text1, text2 }: { topIm
                     clipPath: clipPathTop,
                 }}
             >
-                <p className="horizontal-mask__sticky-image__overlay-text" style={{ top: 20, left: 20 }}>{text1}</p>
+                <p
+                    className="horizontal-mask__sticky-image__overlay-text"
+                    style={{ top: 20, left: 20 }}>{text1}
+                </p>
             </motion.div>
 
-            {/* Bottom Image */}
             <motion.div
                 className="horizontal-mask__sticky-image inset"
                 style={{
@@ -40,7 +42,10 @@ export const HorizontalMaskT = ({ topImage, bottomImage, text1, text2 }: { topIm
                     clipPath: clipPathBottom,
                 }}
             >
-                <p className="horizontal-mask__sticky-image__overlay-text" style={{ top: 20, right: 20 }}>{text2}</p>
+                <p
+                    className="horizontal-mask__sticky-image__overlay-text"
+                    style={{ top: 20, right: 20 }}>{text2}
+                </p>
             </motion.div>
         </div>
     );

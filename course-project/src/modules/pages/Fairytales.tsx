@@ -9,10 +9,14 @@ const filterOptions = [
 ];
 
 export const Fairytales = () => {
+    // Retrieve fairytale card data from custom hook
     const { isPending: isFairytaleCardPending, data: fairytaleCard } = useGetFairytaleCardItems();
+
+    // State to manage the filter selection and search term
     const [selectedFilter, setSelectedFilter] = useState<string | null>(null);
     const [searchTerm, setSearchTerm] = useState('');
 
+    // Filter the fairytale cards based on selected filter and search term
     const filteredFairytales = useMemo(() => {
         if (!fairytaleCard) return [];
 

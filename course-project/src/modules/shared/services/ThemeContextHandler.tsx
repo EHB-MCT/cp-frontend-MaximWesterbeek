@@ -4,6 +4,7 @@ import { ThemeContextType } from './themeContext.types';
 export const ThemeContext = createContext<Partial<ThemeContextType>>({});
 
 export const ThemeContextProvider = (props: any) => {
+  // State to hold the current theme (true for dark mode, false for light mode)
   let [theme, setTheme] = useState(false);
 
   useEffect(() => {

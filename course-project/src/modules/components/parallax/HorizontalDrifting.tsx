@@ -9,12 +9,13 @@ export const HorizontalDrifting = ({ imgUrl, driftUrl }: { imgUrl: string; drift
         offset: ["start end", "end start"],
     });
 
-    const birdX = useTransform(scrollYProgress, [0, 1], ["20vw", "35vw"]);
+    // Calculate the horizontal position of the drifting element based on scroll progress.
+    const driftX = useTransform(scrollYProgress, [0, 1], ["20vw", "35vw"]);
 
-    // Create audio instance (replace with your own sound file)
+    // Create audio instance
     const audio = new Audio(`${import.meta.env.BASE_URL}assets/audio/sfx_frog-sound.mp3`);
     const handlePlaySound = () => {
-        audio.currentTime = 0; // reset if already playing
+        audio.currentTime = 0; // Reset if already playing
         audio.play();
     };
 
@@ -32,14 +33,11 @@ export const HorizontalDrifting = ({ imgUrl, driftUrl }: { imgUrl: string; drift
                     className="drifting__sticky-container__drift-image"
                     style={{
                         backgroundImage: `url(${driftUrl})`,
-                        x: birdX,
+                        x: driftX,
                     }}
                 />
-
-                {/* New clickable box */}
                 <div className="drifting__sticky-container__clickable-box" onClick={handlePlaySound} />
             </div>
-
             <div style={{ height: "200vh" }} />
         </div>
     );

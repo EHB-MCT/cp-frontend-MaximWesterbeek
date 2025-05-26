@@ -3,9 +3,11 @@ import { useGetParallaxLink } from '~/shared/hooks/useGetParallaxLink';
 import styles from '~styles/pages/parallaxWrapperPage.module.scss';
 
 export const ParallaxWrapperPage = () => {
-    const { id } = useParams<{ id: string }>();
+    // Retrieve fairytale link data from custom hook
     const { data: parallaxLinks } = useGetParallaxLink();
 
+    /// Get the fairytale link based on url id.
+    const { id } = useParams<{ id: string }>();
     const matchedItem = parallaxLinks?.find((item) => item.id === id);
     const fairytaleLink = matchedItem?.fairytaleLink;
 

@@ -4,24 +4,28 @@ import { useGetMakingOfItems } from '~/shared';
 import styles from '~styles/pages/makingof.module.scss';
 
 export const MakingOf = () => {
+    // Retrieve fairytale card data from custom hook
+    const { isPending: isMakingOfItemsPending, data: makingOfItems } = useGetMakingOfItems();
+
+    // Environment variable to get base path. Needed for deployment
     const fallbackImage = `${import.meta.env.BASE_URL}assets/img-not-found.png`;
     const handleImageError = (event: React.SyntheticEvent<HTMLImageElement, Event>) => {
         event.currentTarget.src = fallbackImage;
     };
 
+    // Get the making-of info based on url id
     const { id } = useParams<{ id: string }>();
-    const { isPending: isMakingOfItemsPending, data: makingOfItems } = useGetMakingOfItems();
-
-    if (isMakingOfItemsPending) {
-        return <Loader />;
-    }
-
     const fairytale = makingOfItems?.find(item => item.id === id);
 
     if (!fairytale) {
         return <p>Sorry, dit sprookje is niet gevonden.</p>;
     }
 
+    if (isMakingOfItemsPending) {
+        return <Loader />;
+    }
+
+    // Replace new lines with line breaks for description text
     const lineBreak = fairytale.description.replace(/\n/g, "<br><br>")
 
     return (
@@ -84,7 +88,6 @@ export const MakingOf = () => {
                     </div>
                 </div>
             </div>
-
         </div >
     );
 };

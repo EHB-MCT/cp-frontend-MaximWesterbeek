@@ -4,11 +4,11 @@ import { useGetFairytaleCardItems } from '~/shared';
 import styles from '~styles/pages/home.module.scss';
 
 export const Home: React.FC = () => {
+    // Retrieve fairytale card data from custom hook
     const { isPending: isFairytaleCardPending, data: fairytaleCard } = useGetFairytaleCardItems();
 
     return (
         <div className={styles['home-container']}>
-
             <div className={styles['home-container__welcome-section']}>
                 <div className={styles['home-container__welcome-section__info']}>
                     <img

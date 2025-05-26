@@ -4,14 +4,13 @@ import { useRef } from "react";
 export const VerticalImageScrollT = ({ imgUrl }: { imgUrl: string; }) => {
     const ref = useRef(null);
 
-    // Hook into scroll progress of containerRef
     const { scrollYProgress } = useScroll({
         target: ref,
-        offset: ["start start", "end start"], // Pin for height of container
+        offset: ["start start", "end start"],
     });
 
     // Translate image upward as user scrolls
-    const y = useTransform(scrollYProgress, [0.25, 0.05], ["0%", "-54%"]); // Adjust -50% if image is taller
+    const y = useTransform(scrollYProgress, [0.25, 0.05], ["0%", "-54%"]);
 
     return (
         <div ref={ref} className="image-scroll">
@@ -20,7 +19,7 @@ export const VerticalImageScrollT = ({ imgUrl }: { imgUrl: string; }) => {
                     className="image-scroll__sticky-container__image"
                     src={imgUrl}
                     alt="Scrolling image"
-                    style={{ y }} // y is animated scroll value
+                    style={{ y }}
                 />
             </div>
         </div>

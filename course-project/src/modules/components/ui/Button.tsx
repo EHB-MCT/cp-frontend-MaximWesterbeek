@@ -3,7 +3,10 @@ import { ButtonItem } from '~/shared/services/button.types';
 import styles from '~styles/app.module.scss';
 
 export const Button = ({ name, link }: ButtonItem) => {
+    // Check if the link is external or internal
     const isExternal = link.startsWith('http');
+
+    // Check if the current location matches the button's link
     const location = useLocation();
     const isActive = location.pathname === link;
 

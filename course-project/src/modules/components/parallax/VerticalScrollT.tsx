@@ -9,6 +9,7 @@ export const VerticalScrollT = ({ imgUrl }: { imgUrl: string; }) => {
         offset: ["start end", "end end"],
     });
 
+    // Translate, enlarge and reveal image upward as user scrolls
     const scale = useTransform(scrollYProgress, [1, 0], [1, 0.97]);
     const positionY = useTransform(scrollYProgress, [0, .75], ["5vh", "0vh"]);
     const imageOpacity = useTransform(scrollYProgress, [0.75, 0.05], [1, 0]);
@@ -16,7 +17,6 @@ export const VerticalScrollT = ({ imgUrl }: { imgUrl: string; }) => {
     return (
         <div className="vertical-scroll">
             <div className="vertical-scroll__sticky-container">
-
                 <motion.div
                     ref={ref}
                     className="vertical-scroll__sticky-container__bg-image"
@@ -27,7 +27,6 @@ export const VerticalScrollT = ({ imgUrl }: { imgUrl: string; }) => {
                         y: positionY,
                     }}
                 />
-
             </div>
         </div>
     );

@@ -6,7 +6,9 @@ class FairytaleCardService {
         if (!response.ok) {
             throw new Error("Failed to fetch fairytale list");
         }
+
         const data: FairytaleCardType[] = await response.json();
+
         return data;
     }
 }

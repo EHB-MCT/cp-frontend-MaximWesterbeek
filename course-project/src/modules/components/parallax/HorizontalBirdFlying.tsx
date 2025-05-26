@@ -6,10 +6,10 @@ export const HorizontalBirdFlying = ({ imgUrl, birdUrl }: { imgUrl: string; bird
 
     const { scrollYProgress } = useScroll({
         target: ref,
-        offset: ["start start", "end start"], // Adjust to your liking
+        offset: ["start start", "end start"],
     });
 
-    // const bgOpacity = useTransform(scrollYProgress, [1, 0], [1, 0.5]);
+    // Calculate the horizontal position of the bird based on scroll progress.
     const birdX = useTransform(scrollYProgress, [0, 0.5], ["5vw", "55vw"]);
 
     return (
@@ -31,7 +31,6 @@ export const HorizontalBirdFlying = ({ imgUrl, birdUrl }: { imgUrl: string; bird
                     }}
                 />
             </div>
-
             <div style={{ height: "200vh" }} />
         </div>
     );

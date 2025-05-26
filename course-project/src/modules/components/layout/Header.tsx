@@ -4,25 +4,31 @@ import { Link, useLocation, useParams } from 'react-router';
 import { useGetParallaxLink } from '~/shared/hooks/useGetParallaxLink';
 import { RefObject } from 'react';
 
+// Accept aboutRef as a prop to scroll to about section when about button is clicked.
 interface HeaderProps {
     aboutRef: RefObject<HTMLDivElement | null>;
 }
 
 export const Header = ({ aboutRef }: HeaderProps) => {
+    // Environment variable to get base path. Needed for deployment.
     const asset = (filename: string) => `${import.meta.env.BASE_URL}assets/${filename}`;
 
+    // Check if the current page is a parallax or making of page, or home page.
     const location = useLocation();
     const isParallaxOrMakingOf = location.pathname.includes('/parallax') || location.pathname.includes('/makingOf');
     const isHome = location.pathname === '/';
 
+    // Get the id from the url.
     const params = useParams<{ id: string }>();
     const queryParams = new URLSearchParams(location.search);
     const id = params.id || queryParams.get("id");
 
+    // Get the parallax link based on url id.
     const { data: parallaxLinkItems } = useGetParallaxLink();
     const matchedItem = parallaxLinkItems?.find(item => item.id === id);
     const fairytaleLink = matchedItem?.fairytaleLink;
 
+    // Handle click event to scroll to the about section in the footer.
     const handleAboutClick = () => {
         aboutRef?.current?.scrollIntoView({ behavior: 'smooth' });
     };

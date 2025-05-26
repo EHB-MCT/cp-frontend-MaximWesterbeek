@@ -2,6 +2,7 @@ import { HorizontalBirdFlying, HorizontalDrifting, HorizontalMaskT, HorizontalSc
 import styles from '~styles/pages/parallaxPage.module.scss';
 
 export const ParallaxPage = () => {
+    // Environment variable to get base path. Needed for deployment
     const asset = (filename: string) => `${import.meta.env.BASE_URL}assets/parallax/${filename}`;
 
     return (
