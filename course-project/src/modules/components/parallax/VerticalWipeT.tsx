@@ -12,7 +12,7 @@ export const VerticalWipeT = ({ topImage, bottomImage, text, heading, showStart,
 
     const clipPathTop = useTransform(scrollYProgress, [0, 1], ["inset(0% 0% -100% 0%)", "inset(0% 0% 180% 0%)"]);
     const clipPathBottom = useTransform(scrollYProgress, [0, 1], ["inset(200% 0% 0% 0%)", "inset(-100% 0% -0% 0%)"]);
-    const barY = useTransform(scrollYProgress, [0, 1], ["125vh", "122vh"]);
+    const barY = useTransform(scrollYProgress, [0, 1], ["113vh", "113vh"]);
 
     return (
         <div ref={ref} className="vertical-wipe">

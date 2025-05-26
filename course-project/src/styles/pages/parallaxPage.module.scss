@@ -1,13 +1,23 @@
-$white: #FFFFFF;
-$background: rgb(239, 241, 243);
-$blue: #0a78f2;
-$black: rgb(17, 17, 17);
-$stateHover: #f2b40a;
+$font-size: 28px;
 
 .parallax-container {
     background-color: #000;
-
     font-family: 'Geologica', sans-serif;
+}
+
+/* ----- StorySection ----- */
+
+.story-section {
+    position: relative;
+    top: 0;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: $font-size;
+    text-align: center;
+    padding: 0px 100px;
 }
 
 /* ----- HorizontalBirdFlying  ----- */
@@ -181,14 +191,14 @@ $stateHover: #f2b40a;
             &__seam-text1,
             &__seam-text2 {
                 color: white;
-                font-size: 32px;
+                font-size: $font-size;
 
                 background-color: #738A63;
-                padding: 10px 15px;
+                padding: 20px 15px;
                 border-radius: 10px;
 
                 height: 200px;
-                width: 25%;
+                width: 23%;
 
                 align-content: center;
             }
@@ -223,9 +233,6 @@ $stateHover: #f2b40a;
         }
     }
 }
-
-/* ----- VerticalOverlayT ----- */
-
 
 /* ----- VerticalscrollT & VerticalTextAppear ----- */
 
@@ -265,7 +272,7 @@ $stateHover: #f2b40a;
 
 .vertical-wipe {
     position: relative;
-    height: 270vh;
+    height: 240vh;
     isolation: isolate;
 
     &__bg-image-top,
@@ -312,7 +319,7 @@ $stateHover: #f2b40a;
     &__story-bar {
         position: absolute;
         top: 0;
-        height: 250px;
+        height: 150px;
         width: 100%;
         background-color: #000;
         z-index: 1;
@@ -322,21 +329,6 @@ $stateHover: #f2b40a;
         justify-content: center;
 
         color: white;
-        font-size: 32px;
+        font-size: $font-size;
     }
-}
-
-/* ----- StorySection ----- */
-
-.story-section {
-    position: relative;
-    top: 0;
-    width: 100%;
-    background-color: #000;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
-    font-size: 32px;
-    text-align: center;
 }

@@ -43,7 +43,7 @@ export const ParallaxPage = () => {
 
             <StorySection
                 text="Onderweg werd ze meegenomen door een kever. Hij ging met haar op het grootste blad van de boom zitten, gaf haar honing uit de bloemen te eten en zei dat ze erg lief was, al leek ze dan ook helemaal niet op een kever. Maar zijn soortgenoten vonden haar lelijk, en hij liet haar achter op een bloem"
-                height="300px"
+                height="200px"
             />
 
             <VerticalScrollT imgUrl={asset("story_part-06.png")} />
@@ -59,35 +59,35 @@ export const ParallaxPage = () => {
 
             <StorySection
                 text="In een gang vonden ze een dode zwaluw. Haar mooie vleugels waren stevig tegen haar zijden gedrukt, kop en poten had zij onder haar veren getrokken; het arme dier was zeker van de kou gestorven."
-                height="200px"
+                height="150px"
             />
 
             <VerticalScrollT imgUrl={asset("story_part-09.png")} />
 
             <StorySection
                 text="'s Nachts kon Duimelijntje niet slapen. Ze vlocht een hooi-dekentje, legde het over het dode vogeltje en maakte het warm met watten uit de veldmuis haar kamer. Toen legde ze haar hoofd tegen het vogeltje, en schrok: het hartje klopte nog! De zwaluw was niet dood, ze kwam weer bij van de koude."
-                height="300px"
+                height="200px"
             />
 
             <VerticalTextAppearT imgUrl={asset("story_part-10.png")} />
 
             <StorySection
                 text="Toen het lente werd, vloog de zwaluw uit en bood haar aan mee te nemen. Maar uit dankbaarheid voor de veldmuis bleef ze. Toch bleef haar hart vol verdriet. De mol wilde met haar trouwen en alles werd voor de bruiloft voorbereid, maar zij wilde dat helemaal niet."
-                height="300px"
+                height="200px"
             />
 
             <VerticalScrollT imgUrl={asset("story_part-11.png")} />
 
             <StorySection
                 text="Op de dag van het huwelijk, toen ze buiten nog één keer de zonnestralen zag, kwam plots de zwaluw terug."
-                height="150px"
+                height="100px"
             />
 
             <VerticalImageScrollT imgUrl={asset("story_part-12.png")} />
 
             <StorySection
                 text="Duimelijntje sprong op zijn rug en samen vlogen ze ver weg."
-                height="150px"
+                height="100px"
             />
 
             <HorizontalBirdFlying
@@ -97,7 +97,7 @@ export const ParallaxPage = () => {
 
             <StorySection
                 text="Ze kwamen in een zonovergoten land waar bloemen bloeiden en vogels zongen. Daar in een bloem ontmoette Duimelijntje een klein bloemenmannetje, koning van de bloemenvolk. Hij vroeg haar ten huwelijk, gaf haar vleugeltjes, en ze werd koningin van het bloemenvolkje."
-                height="300px"
+                height="200px"
             />
 
             <VerticalWipeT
