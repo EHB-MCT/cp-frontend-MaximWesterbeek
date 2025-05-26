@@ -42,12 +42,12 @@ export const Header = ({ aboutRef }: HeaderProps) => {
             <>
                 <Button name="Home" link="/" />
                 <Button name="Sprookjes" link="/fairytales" />
-                <button
+                <a
                     onClick={handleAboutClick}
                     className={styles['button']}
                 >
                     <p className={styles['button__title']}>About</p>
-                </button>
+                </a>
             </>
         );
     };

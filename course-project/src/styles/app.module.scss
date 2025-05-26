@@ -296,7 +296,7 @@
     color: #000;
     font-family: 'Bungee', sans-serif;
 
-    padding: 9px 19px 7px 19px;
+    padding: 12px 19px 9px 19px;
     margin: 0px 11px;
     justify-self: center;
     align-content: center;
@@ -325,6 +325,10 @@
         text-align: center;
 
         width: 126px;
+    }
+
+    p {
+        padding: none;
     }
 }
 
