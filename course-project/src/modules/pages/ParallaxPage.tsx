@@ -30,7 +30,6 @@ export const ParallaxPage = () => {
             <HorizontalDrifting
                 imgUrl={asset("story_part-03_bg.png")}
                 driftUrl={asset("story_part-03_drift.png")}
-                sfx="/assets/audio/sfx_frog-sound.mp3"
             />
 
             <StorySection text="" height="100px" />
