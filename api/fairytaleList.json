@@ -33,7 +33,7 @@
         "imgsExtra": [
             "https://res.cloudinary.com/ddyh6ryvx/image/upload/Firefly_a_family_consisting_of_a_mom_dad_and_a_daughter_arriving_at_their_newly_bought_house_in_a_c_ek0rqk",
             "https://res.cloudinary.com/ddyh6ryvx/image/upload/AGOTHI_1_lmtswv",
-            "https://res.cloudinary.com/ddyh6ryvx/image/upload/AGOTHI_1_lmtswv"
+            "https://res.cloudinary.com/ddyh6ryvx/image/upload/AGOTHI_4_rim9j6"
         ],
         "imgsInfo": "De beelden zijn geïnspireerd op vintage gotische illustraties uit het Victoriaanse tijdperk. Ze hebben een sprookjesachtig maar onheilspellend karakter, met gedempte kleuren, grove lijnen en een sfeer die lichtjes ongemakkelijk aanvoelt. Deze stijl creëert het gevoel van een oud verhaalboek dat tot leven komt — betoverend, maar met een duistere rand.",
         "genre": "horror",
@@ -64,7 +64,7 @@
         "nameStudent": "Wout Van Impe",
         "fairytale": "Blauwbaard",
         "fairytaleLink": "",
-        "fairytaleAuthor": "",
+        "fairytaleAuthor": "Charles Perrault",
         "parallaxInfo": "",
         "description": "Blauwbaard is een duister sprookje vol mysterie en verboden geheimen. Het gaat over een rijk, maar zonderlinge edelman met een blauwe baard die al meerdere keren getrouwd is geweest, maar niemand weet wat er met zijn vorige vrouwen is gebeurd. Wanneer hij opnieuw trouwt, geeft hij zijn jonge bruid de sleutels van zijn kasteel, met één strikte regel: één kamertje mag ze nooit betreden. De verleiding blijkt te groot, en achter die verboden deur ontdekt ze een huiveringwekkend geheim… het lot van haar voorgangsters. Wanneer Blauwbaard haar daad ontdekt, dreigt ook zij zijn volgende slachtoffer te worden. Maar kan ze hem nog op tijd ontvluchten? ",
         "videoExplainer": "",
@@ -245,8 +245,8 @@
         "nameStudent": "Matteo Giambarresi",
         "fairytale": "De raaf en de vos",
         "fairytaleLink": "https://ehb-mct.github.io/cp-frontend-MatteoGiambarresi/parallax",
-        "fairytaleAuthor": "",
-        "parallaxInfo": "",
+        "fairytaleAuthor": "Jean de la Fontaine",
+        "parallaxInfo": "Mijn parallax website is gemaakt met framer-motion en react-spring, Met react-spring heb ik doorheen mijn volledige website verticale-parallax gebruikt dankzij de ParallaxLayer component. Met framer-motion heb ik de animaties waarbij ik de whileInView veel gebruik zodat de animatie alleen gebeurt wanneer de user het element ziet,",
         "description": "De Raaf en de Vos is een dierenfabel geschreven door Jean de La Fontaine. In dit verhaal laat de schrijver dieren praten en handelen als mensen. Een ijdele raaf zit op een tak met een stuk kaas in zijn bek. Een sluwe vos wil de kaas en vleit de raaf door te zeggen hoe prachtig hij is en hoe mooi hij vast kan zingen. De raaf laat zich vangen door de vleierij, opent zijn snavel om te zingen, en laat zo de kaas vallen - precies wat de vos wilde.\nDe fabel eindigt met een duidelijke moraal: Wees op je hoede voor vleiers.",
         "videoExplainer": "",
         "imgThumbnail": "https://res.cloudinary.com/dhvigmhgw/image/upload/v1747820174/cover_raaf_en_de_vos_rzi5d6.png",
@@ -256,7 +256,7 @@
             "https://res.cloudinary.com/dhvigmhgw/image/upload/v1747822731/wolf_1_dsf1ox.png",
             "https://res.cloudinary.com/dhvigmhgw/image/upload/v1747822731/bird_1_swxd7n.png"
         ],
-        "imgsInfo": "",
+        "imgsInfo": "De beelden zijn gemaakt met Illustrator, ik heb silhouetten gevonden en deze hermaakt in illustrator. Voor de boom heb ik een image gevonden op pinterest en deze gevectoriseerd",
         "genre": "dierenverhaal",
         "storyFrom": "andere sprookjes"
     },
@@ -279,6 +279,26 @@
         "imgsInfo": "",
         "genre": "fantasie",
         "storyFrom": "Gebroeders Grimm"
+    },
+    {
+        "id": "siriyakorn-klaklang-duimelijntje",
+        "nameStudent": "Siriyakorn Klaklang",
+        "fairytale": "Duimelijntje",
+        "fairytaleLink": "https://ehb-mct.github.io/cp-frontend-MeoKlaklang/#/duimelijntje",
+        "fairytaleAuthor": "Hans Christian Andersen, 1836",
+        "parallaxInfo": "We openen met een mouse-follow parallax, waarin een bloem zacht meebeweegt met de cursor. Zodra de bloem opengaat, opent Duimelijntje haar ogen in een subtiele loopanimatie, waarmee haar geboorte wordt gesuggereerd. \nVerderop verschijnt de koning-kikker, verborgen achter bladeren die via een drag-interactie kunnen worden weggesleept. Deze actie triggert een geluidseffect van kwakende kikkers, wat de ontdekking auditief ondersteunt. \nIn de volgende scène zitten de prins-kikker en Madelijntje samen op een lelieblad in een rustig waterlandschap. Door op de kikker te klikken, activeer je een animatie waarin vissen opduiken en de situatie verstoren — een interactief moment dat spanning opbouwt. \nWanneer je over Madelijntje hovert, verschijnen vlinders die haar zachtjes omringen in een hover-triggered emergence, wat visueel haar redding verbeeldt. \nDe scène verschuift naar een groep vogels die haar vergezellen. Deze vogels reageren op muisbeweging met verticale parallax-bewegingen. Een klik op de blauwe vogel zorgt ervoor dat deze uit de boom valt in een dramatische valanimatie, versterkt door geluid. \nDe ervaring eindigt in een multi-layered scroll parallax, waarbij vlinders langs het scherm fladderen en sterren subtiel pulseren op het ritme van een begeleidende soundscape. Deze dynamische finale sluit het verhaal af in een betoverende visuele climax.",
+        "description": "Duimelijntje, een piepklein meisje geboren uit een bloem, wordt ontvoerd door een pad die haar wil uithuwelijken aan haar lelijke zoon. Met hulp van vissen en een vlinder ontsnapt ze. Daarna wordt ze meegenomen door een kever, maar verstoten omdat ze geen voelsprieten heeft. \nZe overleeft de zomer in het bos, maar als de winter komt, vindt een veldmuis haar en biedt haar onderdak. De veldmuis wil haar uithuwelijken aan een blinde, sombere mol. In de ondergrondse gangen verzorgt Duimelijntje in het geheim een zieke zwaluw, die later naar het zuiden vliegt. \nTussen de bloemenontmoet ze de bloemenkoning, met wie ze trouwt en gelukkig leeft zwaluw terug en neemt haar mee naar een zonnig land. Daar Als Duimelijntje gedwongen wordt met de mol te trouwen, keert de zwaluw terug en neemt haar mee naar een zonnig land. Daar ",
+        "videoExplainer": "iG_hLLr6B7k",
+        "imgThumbnail": "https://res.cloudinary.com/dpisu7cdm/image/upload/v1747240114/cx25j1ytaeit1gu5aaa6.jpg",
+        "imgBanner": "https://res.cloudinary.com/dpisu7cdm/image/upload/v1747814740/Firefly_een_lelie_blad_20986_w6ujm5.jpg",
+        "imgsExtra": [
+            "https://res.cloudinary.com/dpisu7cdm/image/upload/v1747240116/jxxo1oxb987cizvgzma1.jpg",
+            "https://res.cloudinary.com/dpisu7cdm/image/upload/v1747240114/uhudl2sx5mrki22slwo7.jpg",
+            "https://res.cloudinary.com/dpisu7cdm/image/upload/v1747240113/essikhz9cgr1szptectc.jpg"
+        ],
+        "imgsInfo": "Deze illustratie heb ik gemaakt met behulp van Adobe Firefly. Ik vond deze stijl heel passend bij de sfeer van klassieke sprookjes, zoals het verhaal van Duimelijntje. Het zachte kleurgebruik, de dromerige details en de magische uitstraling van het kleine elfje sluiten perfect aan bij die betoverende wereld vol wonderlijke wezentjes en kleine avonturen.",
+        "genre": "avontuur",
+        "storyFrom": "H. C. Andersen"
     },
     {
         "id": "nina-breedstraet-de-waternimf-in-de-vijver",
@@ -338,7 +358,7 @@
             "https://res.cloudinary.com/drfkgbixt/image/upload/v1747767973/Tower.01.PNG_ygeavg.webp",
             "https://res.cloudinary.com/drfkgbixt/image/upload/v1747767961/rapuncel-hameleon-paskal-616_rugnn0.webp"
         ],
-        "imgsInfo": "",
+        "imgsInfo": "De beelden zijn gegenereerd in MidJourney. Ik heb gekozen voor een stijl met een sprookjesachtige sfeer, zachte belichting en expressieve, handgetekende karakters. Door deze stijl krijgen de scènes een romantische, nostalgische uitstraling, alsof ze afkomstig zijn uit een oude animatiefilm. De warme kleuren en gedetailleerde omgevingen versterken het magische gevoel van het verhaal.",
         "genre": "avontuur",
         "storyFrom": "Gebroeders Grimm"
     },
@@ -347,7 +367,7 @@
         "nameStudent": "Béatrice Bjoko",
         "fairytale": "De vuurvogel",
         "fairytaleLink": "https://ehb-mct.github.io/cp-frontend-BeatriceBjoko/sprookje",
-        "fairytaleAuthor": "",
+        "fairytaleAuthor": "Bette Westera",
         "parallaxInfo": "",
         "description": "De Vuurvogel is een betoverend sprookje over een magische, vurige vogel met gloeiende veren die in het donker schitteren. In het verhaal gaat een jonge held op zoek naar dit mythische wezen, dat vaak symbool staat voor hoop, vernieuwing of genezing. Onderweg komt hij voor moeilijke keuzes te staan, trotseert hij gevaar en leert hij belangrijke lessen over moed, liefde en opoffering. Het verhaal vindt zijn oorsprong in de Russische folklore en staat bekend om zijn mysterieuze, poëtische toon en rijke, wonderlijke beeldtaal.",
         "videoExplainer": "gcwJyZ0tgEI",
@@ -358,29 +378,9 @@
             "",
             ""
         ],
-        "imgsInfo": "De beelden zijn gegenereerd in MidJourney. Ik heb gekozen voor een stijl met een sprookjesachtige sfeer, zachte belichting en expressieve, handgetekende karakters. Door deze stijl krijgen de scènes een romantische, nostalgische uitstraling, alsof ze afkomstig zijn uit een oude animatiefilm. De warme kleuren en gedetailleerde omgevingen versterken het magische gevoel van het verhaal.",
+        "imgsInfo": "",
         "genre": "magie",
         "storyFrom": "uit Rusland"
-    },
-    {
-        "id": "siriyakorn-klaklang-duimelijntje",
-        "nameStudent": "Siriyakorn Klaklang",
-        "fairytale": "Duimelijntje",
-        "fairytaleLink": "https://ehb-mct.github.io/cp-frontend-MeoKlaklang/#/duimelijntje",
-        "fairytaleAuthor": "Hans Christian Andersen, 1836",
-        "parallaxInfo": "We openen met een mouse-follow parallax, waarin een bloem zacht meebeweegt met de cursor. Zodra de bloem opengaat, opent Duimelijntje haar ogen in een subtiele loopanimatie, waarmee haar geboorte wordt gesuggereerd. \nVerderop verschijnt de koning-kikker, verborgen achter bladeren die via een drag-interactie kunnen worden weggesleept. Deze actie triggert een geluidseffect van kwakende kikkers, wat de ontdekking auditief ondersteunt. \nIn de volgende scène zitten de prins-kikker en Madelijntje samen op een lelieblad in een rustig waterlandschap. Door op de kikker te klikken, activeer je een animatie waarin vissen opduiken en de situatie verstoren — een interactief moment dat spanning opbouwt. \nWanneer je over Madelijntje hovert, verschijnen vlinders die haar zachtjes omringen in een hover-triggered emergence, wat visueel haar redding verbeeldt. \nDe scène verschuift naar een groep vogels die haar vergezellen. Deze vogels reageren op muisbeweging met verticale parallax-bewegingen. Een klik op de blauwe vogel zorgt ervoor dat deze uit de boom valt in een dramatische valanimatie, versterkt door geluid. \nDe ervaring eindigt in een multi-layered scroll parallax, waarbij vlinders langs het scherm fladderen en sterren subtiel pulseren op het ritme van een begeleidende soundscape. Deze dynamische finale sluit het verhaal af in een betoverende visuele climax.",
-        "description": "Duimelijntje, een piepklein meisje geboren uit een bloem, wordt ontvoerd door een pad die haar wil uithuwelijken aan haar lelijke zoon. Met hulp van vissen en een vlinder ontsnapt ze. Daarna wordt ze meegenomen door een kever, maar verstoten omdat ze geen voelsprieten heeft. \nZe overleeft de zomer in het bos, maar als de winter komt, vindt een veldmuis haar en biedt haar onderdak. De veldmuis wil haar uithuwelijken aan een blinde, sombere mol. In de ondergrondse gangen verzorgt Duimelijntje in het geheim een zieke zwaluw, die later naar het zuiden vliegt. \nTussen de bloemenontmoet ze de bloemenkoning, met wie ze trouwt en gelukkig leeft zwaluw terug en neemt haar mee naar een zonnig land. Daar Als Duimelijntje gedwongen wordt met de mol te trouwen, keert de zwaluw terug en neemt haar mee naar een zonnig land. Daar ",
-        "videoExplainer": "iG_hLLr6B7k",
-        "imgThumbnail": "https://res.cloudinary.com/dpisu7cdm/image/upload/v1747240114/cx25j1ytaeit1gu5aaa6.jpg",
-        "imgBanner": "https://res.cloudinary.com/dpisu7cdm/image/upload/v1747814740/Firefly_een_lelie_blad_20986_w6ujm5.jpg",
-        "imgsExtra": [
-            "https://res.cloudinary.com/dpisu7cdm/image/upload/v1747240116/jxxo1oxb987cizvgzma1.jpg",
-            "https://res.cloudinary.com/dpisu7cdm/image/upload/v1747240114/uhudl2sx5mrki22slwo7.jpg",
-            "https://res.cloudinary.com/dpisu7cdm/image/upload/v1747240113/essikhz9cgr1szptectc.jpg"
-        ],
-        "imgsInfo": "Deze illustratie heb ik gemaakt met behulp van Adobe Firefly. Ik vond deze stijl heel passend bij de sfeer van klassieke sprookjes, zoals het verhaal van Duimelijntje. Het zachte kleurgebruik, de dromerige details en de magische uitstraling van het kleine elfje sluiten perfect aan bij die betoverende wereld vol wonderlijke wezentjes en kleine avonturen.",
-        "genre": "avontuur",
-        "storyFrom": "H. C. Andersen"
     },
     {
         "id": "maxim-westerbeek-duimelijntje",
@@ -426,7 +426,7 @@
         "id": "staf-dierickx-aladin-en-de-wonderlamp",
         "nameStudent": "Staf Dierickx",
         "fairytale": "Aladin en de wonderlamp",
-        "fairytaleLink": "",
+        "fairytaleLink": "https://ehb-mct.github.io/cp-frontend-StafDierickx/",
         "fairytaleAuthor": "",
         "parallaxInfo": "",
         "description": "Een jonge avonturier die door een mysterieuze tovenaar wordt uitgestuurd om een magische lamp te vinden in een verborgen grot vol rijkdommen. Na het ontdekken van de lamp en het oproepen van een geest, begint zijn reis pas echt.",
@@ -447,7 +447,7 @@
         "nameStudent": "Eren Sahbaz",
         "fairytale": "Keloğlan",
         "fairytaleLink": "https://ehb-mct.github.io/cp-frontend-ErenSahbaz1/#/cp-frontend-ErenSahbaz1/parallax",
-        "fairytaleAuthor": "Geen auteur. Oorsprong: Turkse en Altaïsche mythologie, sprookjes en soortgelijke volksverhalen.",
+        "fairytaleAuthor": "Turkse en Altaïsche mythologie, sprookjes en soortgelijke volksverhalen.",
         "parallaxInfo": "Vertical parallax, mouse parallax",
         "description": "Keloğlan, wat 'kale jongen' betekent, is een centrale figuur in vele Turkse volksverhalen. In één van deze verhalen besluit Keloglan, een arme maar moedige jongeman, om de man van een reuzin te worden. Hij verlaat zijn moeder en gaat op avontuur, waarbij hij uiteindelijk de reuzin verslaat met behulp van een egel en als held terugkeert naar huis.",
         "videoExplainer": "UX-rZ-0uGVM",
