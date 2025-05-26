@@ -10,6 +10,10 @@ import { ParallaxWrapperPage } from './ParallaxWrapperPage';
 export const router = createBrowserRouter(
     [
         {
+            path: "parallaxPage",
+            element: <ParallaxPage />
+        },
+        {
             path: "/",
             element: <Layout />,
             children: [
@@ -24,10 +28,6 @@ export const router = createBrowserRouter(
                 {
                     path: "makingOf/:id",
                     element: <MakingOf />
-                },
-                {
-                    path: "parallaxPage",
-                    element: <ParallaxPage />
                 },
                 {
                     path: "parallax/:id",
