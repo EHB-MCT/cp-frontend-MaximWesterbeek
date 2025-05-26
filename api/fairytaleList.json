@@ -248,7 +248,7 @@
         "fairytaleAuthor": "Jean de la Fontaine",
         "parallaxInfo": "Mijn parallax website is gemaakt met framer-motion en react-spring, Met react-spring heb ik doorheen mijn volledige website verticale-parallax gebruikt dankzij de ParallaxLayer component. Met framer-motion heb ik de animaties waarbij ik de whileInView veel gebruik zodat de animatie alleen gebeurt wanneer de user het element ziet,",
         "description": "De Raaf en de Vos is een dierenfabel geschreven door Jean de La Fontaine. In dit verhaal laat de schrijver dieren praten en handelen als mensen. Een ijdele raaf zit op een tak met een stuk kaas in zijn bek. Een sluwe vos wil de kaas en vleit de raaf door te zeggen hoe prachtig hij is en hoe mooi hij vast kan zingen. De raaf laat zich vangen door de vleierij, opent zijn snavel om te zingen, en laat zo de kaas vallen - precies wat de vos wilde.\nDe fabel eindigt met een duidelijke moraal: Wees op je hoede voor vleiers.",
-        "videoExplainer": "",
+        "videoExplainer": "0o4bHaYMAw4",
         "imgThumbnail": "https://res.cloudinary.com/dhvigmhgw/image/upload/v1747820174/cover_raaf_en_de_vos_rzi5d6.png",
         "imgBanner": "https://res.cloudinary.com/dhvigmhgw/image/upload/v1747822114/banner_raaf_en_de_vos_ubkodp.png",
         "imgsExtra": [
