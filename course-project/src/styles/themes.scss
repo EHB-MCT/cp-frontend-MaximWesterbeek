@@ -73,13 +73,6 @@ $transition: background-color 0.3s ease;
         color: #000;
         border: #E51131 solid 2px;
         box-shadow: 2px 2px #E51131 inset;
-
-        &:hover {
-            filter: drop-shadow(0px 0px);
-            background-color: #E51131;
-            color: #fff;
-            border: #fff solid 2px;
-        }
     }
 
     @else {
@@ -87,13 +80,6 @@ $transition: background-color 0.3s ease;
         color: #000;
         border: #000 solid 2px;
         box-shadow: 2px 2px #000 inset;
-
-        &:hover {
-            filter: drop-shadow(0px 0px);
-            background-color: #EBF5EC;
-            color: #fff;
-            border: #000 solid 2px;
-        }
     }
 }
 
