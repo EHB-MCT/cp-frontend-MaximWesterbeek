@@ -92,7 +92,7 @@ To get started with the project, follow these steps:
 ## Extra content
 - [Github Pages live site](https://ehb-mct.github.io/cp-frontend-MaximWesterbeek)
 - [Figma protoype design](https://www.figma.com/proto/uZ9KXfor14NnBGwhueP72n/F-E_Course-Project?node-id=55-147&t=ijWlH0mS845bSzfo-1&starting-point-node-id=55%3A147)
-- [Explainer video (in Dutch)](https://www.youtube.com/watch?v=mBd1Q5rTnh4)
+- [Explainer video (in Dutch)](https://www.youtube.com/watch?v=l3fjtn99Y4A)
 
 ---
 
