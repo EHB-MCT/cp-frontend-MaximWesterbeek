@@ -11,12 +11,15 @@ In addition to the fairytale site, a central portal was developed (also using Re
 I managed the JSON file used by all students to ensure consistency and avoid errors in data retrieval. You can find this file in `public/api/fairytaleList.json`.  
 While I did my best to ensure all information from the provided online Excel sheet was transferred accurately, there may still be some minor inconsistencies. Managing submissions from all students was a challenging task. Thank you for your understanding.
 
+---
+
 ## Table of Contents
 1. [Features](#features)
 2. [Project Setup](#project-setup)
 3. [Coding Conventions](#coding-conventions)
 4. [License](#license)
-5. [Attribution](#attribution)
+5. [Extra Content](#extra-content)
+6. [Attribution](#attribution)
 
 ---
 
@@ -86,6 +89,13 @@ To get started with the project, follow these steps:
 
 ---
 
+## Extra content
+- [Github Pages live site](https://ehb-mct.github.io/cp-frontend-MaximWesterbeek)
+- [Figma protoype design](https://www.figma.com/proto/uZ9KXfor14NnBGwhueP72n/F-E_Course-Project?node-id=55-147&t=ijWlH0mS845bSzfo-1&starting-point-node-id=55%3A147)
+- [Explainer video (in Dutch)](https://www.youtube.com/watch?v=mBd1Q5rTnh4)
+
+---
+
 ## Attribution
 
 ### Documentations
@@ -113,6 +123,9 @@ To get started with the project, follow these steps:
 > This code was used to make the fallback image logic work.
 > - [Fallback image logic](https://patrickpassarella.com/blog/image-fallback-component)
 
+> I used this tutorial to understand how to search and filter data in React with TypeScript.
+> - [A Guide to Filtering Data in React with TypeScript](https://plainenglish.io/blog/react-and-typescript-generic-search-sort-and-filter-879c5c3e2f0e)
+
 > This code was used to implement the 'about' scroll to functionality. Together with below referenced chatGPT I implemented it into my own project.
 > - [Scroll to logic](https://bobbyhadz.com/blog/react-scroll-to-element-on-click)
 
@@ -132,3 +145,5 @@ To get started with the project, follow these steps:
 
 ### Extra sources
 - [Frog sound effect](https://pixabay.com/sound-effects/frog-85649/)
+- [Er Was Eens... logo](https://drive.google.com/file/d/1Ox6EUWNQE3gx4-jShzrHTLb7a_a5fZcf/view)
+- [Wikipedia page with fairytales we could choose from](https://nl.wikipedia.org/wiki/Lijst_van_sprookjes)
